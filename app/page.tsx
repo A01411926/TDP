@@ -1,21 +1,23 @@
-// pages/index.js
-//import Navbar from "../app/components/Navbar";
-import App from "../app/Components/App";
+//app\layout.tsx
 
-export default function Home() {
+"use client";
+
+import React from 'react';
+import App from './Components/App';
+import Navbar from './Components/Navbar';
+
+const Home = () => {
   return (
     <div>
-      <div> 
-        {/*<Navbar />*/}
-        <div className="text-left text-4xl font-bold ml-20 mt-2">
-          Espacio de trabajo
-        </div>
-        <br></br>
-        <App />
-        <main>
-          {/* Contenido de la página */}
-        </main>
+      <Navbar />
+      <div className="text-left text-4xl font-bold ml-20 mt-2">
+        Espacio de trabajo
       </div>
+      <br />
+      <App />
+      <main></main>
     </div>
   );
-}
+};
+
+export default Home;
